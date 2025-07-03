@@ -1,0 +1,24 @@
+- name: releasePlannedProducts
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: launchWholeArticlesToStoresTaskCreate
+      variables:
+        excludeLaunchPlanIds: []
+        filters:
+        - field: articleNo
+          filter:
+            op: EQUALS
+            values:
+            - L07702
+        launchStores:
+        - JD
+      query: "mutation launchWholeArticlesToStoresTaskCreate($excludeLaunchPlanIds:\
+        \ [String!]!, $filters: [FilterInput!]!, $launchStores: [AdidasStore!]) {\n\
+        \  launchWholeArticlesToStoresTaskCreate(excludeLaunchPlanIds: $excludeLaunchPlanIds,\
+        \ filters: $filters, launchStores: $launchStores) {\n    id\n    __typename\n\
+        \  }\n}\n"
+  category: "12127"
+  aggregation_number: "chL07702"
+

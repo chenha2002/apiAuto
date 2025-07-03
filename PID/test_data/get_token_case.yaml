@@ -1,0 +1,9 @@
+- name: getToken
+  request:
+    url: https://dev-auth.adidas.com.cn/auth/realms/business/protocol/openid-connect/token
+    data:
+      client_id: product-hub-keycloak
+      grant_type: refresh_token
+      refresh_token: eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiZTM5MGQ2Yy05NTQ3LTQ1ZmMtOTE2Yy0xMDAyNDEwMzY3NzQifQ.eyJleHAiOjE3Mzk3ODQyMzAsImlhdCI6MTczOTc4MjQzMCwianRpIjoiOTIzZmNjN2UtY2RmNy00ZGM5LTk0NzctMzY1NjY0YmQ1NGRhIiwiaXNzIjoiaHR0cHM6Ly9kZXYtYXV0aC5hZGlkYXMuY29tLmNuL2F1dGgvcmVhbG1zL2J1c2luZXNzIiwiYXVkIjoiaHR0cHM6Ly9kZXYtYXV0aC5hZGlkYXMuY29tLmNuL2F1dGgvcmVhbG1zL2J1c2luZXNzIiwic3ViIjoiZGExYmVmYTUtZDAxNy00NWQyLTlkMWEtNWJkZWY4OWViMDA3IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InByb2R1Y3QtaHViLWtleWNsb2FrIiwibm9uY2UiOiIwOTcwYTI3NS05ZmE1LTQwYTctOGJkYS1kYzBhMWY3ZTI5NzkiLCJzaWQiOiIzMjYzNWEyNi1kNzQ0LTQ5YmUtYTE3Ny0yOWJlNmRlYzM1MDEiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIHdlYi1vcmlnaW5zIHJvbGVzIGJhc2ljIGVtYWlsIn0.YqcaC8YtgAgy4sWvFWavm3fLtHq82Wawwwe6HYOJw_xJIthVbS73kAEtTldesw8Z31jDHDUP-3AQpv4h7_sZCg
+    headers:
+      content-type: application/x-www-form-urlencoded

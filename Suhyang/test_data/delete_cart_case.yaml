@@ -1,0 +1,13 @@
+- name: deleteCart
+  e:
+    headers:
+      content-type: application/json
+    json:
+      extensions:
+        persistedQuery:
+          sha256Hash: 3e33c187b5e91418c141cf677b88f693e5a6e39d7179df61e1fad88042917b53
+          version: 1
+      operationName: deleteCartGql
+      variables:
+        input:
+          lineIds: None

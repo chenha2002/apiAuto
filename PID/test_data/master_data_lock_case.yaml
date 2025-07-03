@@ -1,0 +1,17 @@
+- name: masterDataLock
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: masterDataLock
+      variables:
+        input:
+          id: null
+          fieldValues:
+            field: null
+            existValue: ''
+            newValue: null
+      query: "mutation masterDataLock($input: MasterDataLockInput!) {\n  masterDataLock(input:\
+        \ $input) {\n    masterData {\n      id\n      __typename\n    }\n    userErrors\
+        \ {\n      ...userError\n      __typename\n    }\n    __typename\n  }\n}\n\
+        \nfragment userError on UserError {\n  fields\n  message\n  __typename\n}\n"

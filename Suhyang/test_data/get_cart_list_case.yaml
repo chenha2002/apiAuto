@@ -1,0 +1,11 @@
+- name: getCartList
+  request:
+    headers:
+      content-type: application/json
+    params:
+      extensions:
+        persistedQuery:
+          sha256Hash: 530d9e26e3223407716ef4c4ad81b54d687636f8ff48b9c4e8fa92c55149a8e2
+          version: 1
+      operationName: cartGql
+      variables: {}

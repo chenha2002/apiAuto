@@ -1,0 +1,24 @@
+- name: estimatePriceBySkuCode
+  request:
+    headers:
+      content-type: application/json
+    params:
+      extensions:
+        persistedQuery:
+          sha256Hash: f654b9ecc246f75a0661eedffdb7f0ca1a6efaf1c513abc0e79fefe1ba60ef37
+          version: 1
+      operationName: estimatePriceBySkuCodesGql
+      variables:
+        level: '1'
+        skuCodes:
+        - 668618c4d9f88300011616dd
+        - 668618c5d9f883000116172c
+        - 668618c7d9f88300011617e0
+        - 668618c8d9f8830001161827
+        - 668618d4d9f8830001161cd6
+        - 66ce5b1d6e9c1e0001466798
+        - 66ce62db6e9c1e0001492cd7
+        - 66ce70366e9c1e00014d191d
+        - 66cf6a030f17ff0001ebbf0e
+        - 66cf760508c3440001d89b31
+        tags: []

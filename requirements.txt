@@ -1,0 +1,8 @@
+pytest
+requests
+PyYAML
+allure-pytest
+python-dotenv
+jsonschema
+pytest-dependency
+pytest-ordering

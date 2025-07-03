@@ -1,0 +1,9 @@
+- name: getShops
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: shops
+      query: "query shops {\n  shops {\n    id\n    name\n    platform\n    supportShortTitleAutomation\n\
+        \    autoShelve\n    __typename\n  }\n}\n"
+      variables: {}

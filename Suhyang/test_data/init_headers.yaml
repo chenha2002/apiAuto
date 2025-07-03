@@ -1,0 +1,4 @@
+- name: add_cart
+  request:
+    headers:
+      content-type: application/json

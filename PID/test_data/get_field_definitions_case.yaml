@@ -1,0 +1,14 @@
+- name: fieldDefinitions
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: fieldDefinitions
+      query: "query fieldDefinitions($input: Typename!) {\n  fieldDefinitions(onType:\
+        \ $input) {\n    ...fieldDefinition\n    __typename\n  }\n}\n\nfragment fieldDefinition\
+        \ on FieldDefinition {\n  id\n  name\n  type\n  field\n  possibleValues\n\
+        \  allowManuallyUpdate\n  requiredForPlatform\n  systemPreset\n  sourceFrom\n\
+        \  expression {\n    conditions\n    values\n    default\n    __typename\n\
+        \  }\n  onType\n  __typename\n}\n"
+      variables:
+        input: MasterData

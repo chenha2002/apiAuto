@@ -1,0 +1,20 @@
+- name: cartReplace
+  request:
+    headers:
+      content-type: application/json
+    json:
+      extensions:
+        persistedQuery:
+          sha256Hash: 11c83ca594a0e266a7793bad4b1ff5c2eaad7c3d19667d8d873a322fcd1248eb
+          version: 1
+      operationName: cartReplaceGql
+      variables:
+        input:
+          extProps:
+            accountName: wqm007
+            isNeedPackage: false
+          fromLineId: None
+          quantity: 2
+          relateLines: null
+          toOrderSkuCode: "66baf9b1f7538c000191d75d"
+          toSkuCode: "66baf9b1f7538c000191d75d"

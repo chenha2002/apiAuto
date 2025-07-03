@@ -1,0 +1,9 @@
+- name: visitorLogin
+  request:
+    json:
+      operationName: "visitorLoginGql"
+      variables: {}
+      extensions:
+        persistedQuery:
+          version: 1
+          sha256Hash: 747700bf38178c4b5c6898499447804571da8fd7974b4d04e34bd26151b343fd

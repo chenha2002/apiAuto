@@ -1,0 +1,15 @@
+- name: updateCart
+  request:
+    headers:
+      content-type: application/json
+    json:
+      extensions:
+        persistedQuery:
+          sha256Hash: 89e40b1486a962d8f5e7bb6ae53006f49ea038847e53e6be6cb23d3d9ee949ca
+          version: 1
+      operationName: updateCartGql
+      variables:
+        input:
+          lineId: None
+          quantity: 2
+          relateLines: null

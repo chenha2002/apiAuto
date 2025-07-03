@@ -1,0 +1,16 @@
+- name: add_cart
+  request:
+    headers:
+      content-type: application/json
+    query: |
+      mutation cartAddGql($input: AddCartInput!) {
+        addCart(input: $input)
+      }
+    variables:
+      input:
+        items:
+          - skuCode: "66baf9b1f7538c000191d743"
+            orderSkuCode: "66baf9b1f7538c000191d743"
+            quantity: 1
+            relateLines: null
+            extProps: '{"isNeedPackage": false}'

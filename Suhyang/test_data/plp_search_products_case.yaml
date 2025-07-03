@@ -1,0 +1,30 @@
+- name: searchProducts
+  request:
+    headers:
+      content-type: application/json
+    params:
+      operationName: searchProductsGql
+      variables:
+        input:
+          pageInput:
+            after: null
+            first: 10
+          searchInput:
+            sort:
+              - orderField: hasInventory
+                order: DESC
+              - orderField: sales
+                order: DESC
+              - orderField: firstListTime
+                order: DESC
+            conditionRoot:
+              operator: AND
+              conditions:
+                - key: saleStatus
+                  fqRule: EQ
+                  value: '1'
+            keyword: MARS
+      extensions:
+        persistedQuery:
+          version: 1
+          sha256Hash: 7572cb00f19a9fc56514669aec830fa1bcf383a8920e7ea80cf32450c3297d95

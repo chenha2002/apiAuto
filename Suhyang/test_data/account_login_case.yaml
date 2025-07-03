@@ -1,0 +1,13 @@
+- name: accountLogin
+  request:
+    json:
+      operationName: accountLoginGql
+      variables:
+        input:
+          password: "HeGUyYMAk+QSSPmeAIzOOvokFlLJcYHpe+Ag8naUvC1Y88QEDYvzH1gzujPdrGixMLYXYMA+v7/sjSeMo416R5FN1vn8BUJPtq3A8z+UqHwPtyp9m+kaMYTvI//DGK060l9+w9aTHaxQhfQaugujhDbRyv2zgz9kaK9oIHBtZmkAO+zhdZiLGPJlbNZY17RbwMmqW7TXZgVv5tN3MCeGuHxx/8lcIXUhrhaUYdraW+pD6qC+MJ4p/RoQnOEx9lKVsQe+2yAJXMPkO9amQRKnIwPLDkzVKVdOH7jO79kydnFgceoeJ2PqO9jGroVtc4HhATVwLCoHgGJVlM8/ZBY21g=="
+          account: wqm007
+          loginSource: PC
+      extensions:
+        persistedQuery:
+          version: 1
+          sha256Hash: f2dcb29277caba58065ef589cba780f8e1736c7d484377f28288c74595d8491e

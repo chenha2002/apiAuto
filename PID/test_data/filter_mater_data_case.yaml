@@ -1,0 +1,271 @@
+- name: filterArticleMasterDataByArticleNo
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: masterData
+      query: "query masterData($page: Int, $size: Int, $filters: [FilterInput!], $orderBy:\
+        \ [MasterDataOrderBy!]) {\n  masterData(page: $page, size: $size, filters:\
+        \ $filters, orderBy: $orderBy) {\n    size\n    page\n    total\n    totalPages\n\
+        \    hasNext\n    hasPrevious\n    content {\n      id\n      importTime\n\
+        \      updateTime\n      comparision {\n        field\n        before\n  \
+        \      after\n        __typename\n      }\n      _imageStates {\n        lastModifiedAt\n\
+        \        __typename\n      }\n      articlePrice {\n        id\n        articleNo\n\
+        \        CRP\n        RRP\n        __typename\n      }\n      _locks {\n \
+        \       Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n  \
+        \      Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      barcodeCount\n\
+        \      _errors {\n        Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n\
+        \        Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      _statistics\
+        \ {\n        requiredFieldPrepared\n        hasStock\n        __typename\n\
+        \      }\n      _imageStates {\n        main\n        pdp\n        __typename\n\
+        \      }\n      Article_0020No\n      Brand_002DOC\n      Hard_0020Launch\n\
+        \      Model_0020Name\n      Model_0020No\n      Normal_0020Launch_0020Date\n\
+        \      On_0020Shelf_0020Date\n      __typename\n    }\n    __typename\n  }\n\
+        }\n"
+      variables:
+        filters:
+        - field: Article_0020No
+          filter:
+            op: EQUALS
+            values:
+            - L07702
+            - KC0968
+            - KC0371
+            - KC0305
+            - KC0304
+            - KB9708
+        orderBy:
+        - importTime_DESC
+        page: 1
+        size: 20
+- name: filterArticleMasterDataByModelNumber
+  request:
+    json:
+      operationName: masterData
+      query: "query masterData($page: Int, $size: Int, $filters: [FilterInput!], $orderBy:\
+        \ [MasterDataOrderBy!]) {\n  masterData(page: $page, size: $size, filters:\
+        \ $filters, orderBy: $orderBy) {\n    size\n    page\n    total\n    totalPages\n\
+        \    hasNext\n    hasPrevious\n    content {\n      id\n      importTime\n\
+        \      updateTime\n      comparision {\n        field\n        before\n  \
+        \      after\n        __typename\n      }\n      _imageStates {\n        lastModifiedAt\n\
+        \        __typename\n      }\n      articlePrice {\n        id\n        articleNo\n\
+        \        CRP\n        RRP\n        __typename\n      }\n      _locks {\n \
+        \       Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n  \
+        \      Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      barcodeCount\n\
+        \      _errors {\n        Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n\
+        \        Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      _statistics\
+        \ {\n        requiredFieldPrepared\n        hasStock\n        __typename\n\
+        \      }\n      _imageStates {\n        main\n        pdp\n        __typename\n\
+        \      }\n      Article_0020No\n      Brand_002DOC\n      Hard_0020Launch\n\
+        \      Model_0020Name\n      Model_0020No\n      Normal_0020Launch_0020Date\n\
+        \      On_0020Shelf_0020Date\n      __typename\n    }\n    __typename\n  }\n\
+        }\n"
+      variables:
+        filters:
+        - field: Model_0020No
+          filter:
+            op: EQUALS
+            values:
+            - FBC51
+            - KKK97
+        orderBy:
+        - importTime_DESC
+        page: 1
+        size: 20
+    headers:
+      content-type: application/json
+- name: filterArticleMasterDataByChanges
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: masterData
+      query: "query masterData($page: Int, $size: Int, $filters: [FilterInput!], $orderBy:\
+        \ [MasterDataOrderBy!]) {\n  masterData(page: $page, size: $size, filters:\
+        \ $filters, orderBy: $orderBy) {\n    size\n    page\n    total\n    totalPages\n\
+        \    hasNext\n    hasPrevious\n    content {\n      id\n      importTime\n\
+        \      updateTime\n      comparision {\n        field\n        before\n  \
+        \      after\n        __typename\n      }\n      _imageStates {\n        lastModifiedAt\n\
+        \        __typename\n      }\n      articlePrice {\n        id\n        articleNo\n\
+        \        CRP\n        RRP\n        __typename\n      }\n      _locks {\n \
+        \       Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n  \
+        \      Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      barcodeCount\n\
+        \      _errors {\n        Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n\
+        \        Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      _statistics\
+        \ {\n        requiredFieldPrepared\n        hasStock\n        __typename\n\
+        \      }\n      _imageStates {\n        main\n        pdp\n        __typename\n\
+        \      }\n      Article_0020No\n      Brand_002DOC\n      Hard_0020Launch\n\
+        \      Model_0020Name\n      Model_0020No\n      Normal_0020Launch_0020Date\n\
+        \      On_0020Shelf_0020Date\n      __typename\n    }\n    __typename\n  }\n\
+        }\n"
+      variables:
+        filters:
+        - field: updateTime
+          filter:
+            op: BETWEEN_STRING
+            values:
+            - ''
+            - '2025-02-07 14:01:55'
+        orderBy:
+        - importTime_DESC
+        page: 1
+        size: 20
+- name: filterArticleMasterDataByHeadImages
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: masterData
+      variables:
+        page: 1
+        size: 20
+        filters:
+        - field: _imageStates.main
+          filter:
+            op: EQUALS
+            values:
+            - 'true'
+            valueType: BOOLEAN
+        orderBy:
+        - importTime_DESC
+      query: "query masterData($page: Int, $size: Int, $filters: [FilterInput!], $orderBy:\
+        \ [MasterDataOrderBy!]) {\n  masterData(page: $page, size: $size, filters:\
+        \ $filters, orderBy: $orderBy) {\n    size\n    page\n    total\n    totalPages\n\
+        \    hasNext\n    hasPrevious\n    content {\n      id\n      importTime\n\
+        \      updateTime\n      comparision {\n        field\n        before\n  \
+        \      after\n        __typename\n      }\n      _imageStates {\n        lastModifiedAt\n\
+        \        __typename\n      }\n      articlePrice {\n        id\n        articleNo\n\
+        \        CRP\n        RRP\n        __typename\n      }\n      _locks {\n \
+        \       Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n  \
+        \      Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      barcodeCount\n\
+        \      _errors {\n        Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n\
+        \        Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      _statistics\
+        \ {\n        requiredFieldPrepared\n        hasStock\n        __typename\n\
+        \      }\n      _imageStates {\n        main\n        pdp\n        __typename\n\
+        \      }\n      Article_0020No\n      Brand_002DOC\n      Hard_0020Launch\n\
+        \      Model_0020Name\n      Model_0020No\n      Normal_0020Launch_0020Date\n\
+        \      On_0020Shelf_0020Date\n      __typename\n    }\n    __typename\n  }\n\
+        }\n"
+- name: filterArticleMasterDataByPdpChanges
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: masterData
+      variables:
+        page: 1
+        size: 20
+        filters:
+        - field: _imageStates.pdp
+          filter:
+            op: EQUALS
+            values:
+            - 'true'
+            valueType: BOOLEAN
+        orderBy:
+        - importTime_DESC
+      query: "query masterData($page: Int, $size: Int, $filters: [FilterInput!], $orderBy:\
+        \ [MasterDataOrderBy!]) {\n  masterData(page: $page, size: $size, filters:\
+        \ $filters, orderBy: $orderBy) {\n    size\n    page\n    total\n    totalPages\n\
+        \    hasNext\n    hasPrevious\n    content {\n      id\n      importTime\n\
+        \      updateTime\n      comparision {\n        field\n        before\n  \
+        \      after\n        __typename\n      }\n      _imageStates {\n        lastModifiedAt\n\
+        \        __typename\n      }\n      articlePrice {\n        id\n        articleNo\n\
+        \        CRP\n        RRP\n        __typename\n      }\n      _locks {\n \
+        \       Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n  \
+        \      Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      barcodeCount\n\
+        \      _errors {\n        Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n\
+        \        Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      _statistics\
+        \ {\n        requiredFieldPrepared\n        hasStock\n        __typename\n\
+        \      }\n      _imageStates {\n        main\n        pdp\n        __typename\n\
+        \      }\n      Article_0020No\n      Brand_002DOC\n      Hard_0020Launch\n\
+        \      Model_0020Name\n      Model_0020No\n      Normal_0020Launch_0020Date\n\
+        \      On_0020Shelf_0020Date\n      __typename\n    }\n    __typename\n  }\n\
+        }\n"
+- name: filterArticleMasterDataByInventory
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: masterData
+      variables:
+        page: 1
+        size: 20
+        filters:
+        - field: hasStock
+          filter:
+            op: EQUALS
+            values:
+            - 'true'
+            valueType: BOOLEAN
+        orderBy:
+        - importTime_DESC
+      query: "query masterData($page: Int, $size: Int, $filters: [FilterInput!], $orderBy:\
+        \ [MasterDataOrderBy!]) {\n  masterData(page: $page, size: $size, filters:\
+        \ $filters, orderBy: $orderBy) {\n    size\n    page\n    total\n    totalPages\n\
+        \    hasNext\n    hasPrevious\n    content {\n      id\n      importTime\n\
+        \      updateTime\n      comparision {\n        field\n        before\n  \
+        \      after\n        __typename\n      }\n      _imageStates {\n        lastModifiedAt\n\
+        \        __typename\n      }\n      articlePrice {\n        id\n        articleNo\n\
+        \        CRP\n        RRP\n        __typename\n      }\n      _locks {\n \
+        \       Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n  \
+        \      Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      barcodeCount\n\
+        \      _errors {\n        Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n\
+        \        Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      _statistics\
+        \ {\n        requiredFieldPrepared\n        hasStock\n        __typename\n\
+        \      }\n      _imageStates {\n        main\n        pdp\n        __typename\n\
+        \      }\n      Article_0020No\n      Brand_002DOC\n      Hard_0020Launch\n\
+        \      Model_0020Name\n      Model_0020No\n      Normal_0020Launch_0020Date\n\
+        \      On_0020Shelf_0020Date\n      __typename\n    }\n    __typename\n  }\n\
+        }\n"
+- name: filterArticleMasterDataByUpdateTime
+  request:
+    headers:
+      content-type: application/json
+    json:
+      operationName: masterData
+      variables:
+        page: 1
+        size: 20
+        filters:
+        - field: _imageStates.lastModifiedAt
+          filter:
+            op: BETWEEN
+            values:
+            - '2024-02-01 00:00:00'
+            - '2024-03-01 00:00:00'
+            valueType: DATE
+        orderBy:
+        - importTime_DESC
+      query: "query masterData($page: Int, $size: Int, $filters: [FilterInput!], $orderBy:\
+        \ [MasterDataOrderBy!]) {\n  masterData(page: $page, size: $size, filters:\
+        \ $filters, orderBy: $orderBy) {\n    size\n    page\n    total\n    totalPages\n\
+        \    hasNext\n    hasPrevious\n    content {\n      id\n      importTime\n\
+        \      updateTime\n      comparision {\n        field\n        before\n  \
+        \      after\n        __typename\n      }\n      _imageStates {\n        lastModifiedAt\n\
+        \        __typename\n      }\n      articlePrice {\n        id\n        articleNo\n\
+        \        CRP\n        RRP\n        __typename\n      }\n      _locks {\n \
+        \       Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n  \
+        \      Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      barcodeCount\n\
+        \      _errors {\n        Article_0020No\n        Brand_002DOC\n        Hard_0020Launch\n\
+        \        Model_0020Name\n        Model_0020No\n        Normal_0020Launch_0020Date\n\
+        \        On_0020Shelf_0020Date\n        __typename\n      }\n      _statistics\
+        \ {\n        requiredFieldPrepared\n        hasStock\n        __typename\n\
+        \      }\n      _imageStates {\n        main\n        pdp\n        __typename\n\
+        \      }\n      Article_0020No\n      Brand_002DOC\n      Hard_0020Launch\n\
+        \      Model_0020Name\n      Model_0020No\n      Normal_0020Launch_0020Date\n\
+        \      On_0020Shelf_0020Date\n      __typename\n    }\n    __typename\n  }\n\
+        }\n"
